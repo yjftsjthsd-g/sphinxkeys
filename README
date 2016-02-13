@@ -2,21 +2,28 @@ ABOUT SPHINXKEYS
 
 SphinxKeys lets you essentially type keyboard keys and mouse clicks by speaking into a microphone; since most computer programs offer extensive keyboard shortcuts, you can can use SphinxKeys to control your computer.  SphinxKeys also understands a few simple commands that help you with common computer tasks such as using the clipboard or entering passwords.  SphinxKeys emphasizes simplicity and "just working" rather than attempting sophisticated language parsing, or integration with other programs.  Just think of it as typing by speaking.
 
-Please visit the project page at http://code.google.com/p/sphinxkeys/
+This project was formerly hosted at http://code.google.com/p/sphinxkeys/
 
 
 ======================
 REQUIREMENTS
 
-Currently SphinxKeys only works on Linux due to it's dependence on xmacro to send keystrokes.  If someone can plug in an equivalent for Windows, maybe it will work there.
+Currently SphinxKeys only works on Linux due to its dependence on xmacro to send keystrokes.  If someone can plug in an equivalent for Windows, maybe it will work there.
 
-SphinxKeys is very small program that connects many other components together.  You need these components before SphinxKeys will work.  Your Linux distribution -- if fairly current -- almost certainly has all of them available.  I run this myself on Ubuntu 10.04 "Lucid".  The packages required there are:
+SphinxKeys is very small program that connects many other components together.  You need these components before SphinxKeys will work. While the program was originally run on Ubunto 10.04, current dependencies can still be found in current repos.
+
+The packages required on Ubuntu 10.04 "Lucid" were:
 
    gstreamer0.10-pocketsphinx:  GStreamer plugins for Pocketsphinx
    python-pocketsphinx:		Python hooks into Pocketsphinx
    xmacro:			Sends keystrokes to your screen
    gstreamer0.10-plugins-base:	GStreamer plugins for basic sound processing
    gstreamer0.10-alsa:		GStreamer plugin for ALSA, which makes your microphone work
+
+On Void Linux in early 2016 (Void is rolling release), I had to install the following, although I'm not 100% sure this list is comprehensive:
+   gst-python-devel
+   pygtk-devel
+   gst-plugins-base
 
 
 ======================
